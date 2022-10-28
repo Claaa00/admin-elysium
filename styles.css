@@ -68,10 +68,28 @@ a {
   margin: auto;
 }
 
+.fixed-padding {
+  padding: 20px;
+}
+
 .flex-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+.round-corner {
+  border-radius: 5px;
 }
 
 /*=============== 
@@ -189,4 +207,84 @@ a {
   color: white;
   background-color: #08182f;
   font-weight: 500;
+}
+
+/*=============== 
+      CONTENT
+=================*/
+
+.content-container {
+  background-color: white;
+}
+
+.page-content {
+  color: #333;
+  padding-block: 20px;
+  overflow: hidden;
+}
+
+.page-info,
+.greetings-message,
+.container-name {
+  margin-bottom: 30px;
+}
+
+.page-info .page-title,
+.greetings-message .greeting {
+  margin-bottom: 5px;
+}
+
+.greetings-message,
+.status-container {
+  max-width: 382px;
+  margin-right: 15px;
+}
+
+.greetings-message {
+  padding: 5px 20px;
+}
+
+.status-container {
+  background-color: #08182f;
+  color: white;
+}
+.status i,
+.status-info {
+  display: block;
+}
+
+.statuses {
+  /* width: 100%; */
+  /* display: flex;
+  overflow: auto; */
+  display: grid;
+  gap: 15px;
+  grid-template-columns: auto auto;
+}
+
+.status {
+  background-color: white;
+  color: #333;
+  max-width: 163px;
+  /* height: 116px; */
+  padding: 20px;
+}
+
+.status .icon {
+  background-color: rgba(8, 24, 47, 0.7);
+  width: 20px;
+  height: 20px;
+  font-size: 12.5px;
+  padding: 5px;
+  float: right;
+  color: white;
+}
+
+.status .status-info {
+  text-align: left;
+}
+
+.status .status-info .statistics,
+.status .icon {
+  margin-bottom: 5px;
 }
