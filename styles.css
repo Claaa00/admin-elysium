@@ -1,0 +1,192 @@
+body,
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Dm Sans", sans-serif;
+  /* font-size: 16px; */
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+label,
+a,
+p {
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 27px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+strong {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+label,
+p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+p {
+  opacity: 0.8;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: white;
+}
+
+.fixed-width {
+  max-width: 1150px;
+  margin: auto;
+}
+
+.flex-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*=============== 
+      HEADER
+=================*/
+
+.header-container {
+  background-color: #08182f;
+}
+
+.page-header {
+  color: white;
+  padding-block: 5px;
+  overflow: hidden;
+}
+
+.logo-container .logo {
+  width: 40px;
+  margin-right: 1px;
+}
+
+.logo-container .logo-label {
+  padding-block: 6px;
+}
+
+/* .main-menu ol .menu-item {
+  display: inline-block;
+} */
+
+.main-menu .flex-item .menu-item .menu {
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  padding: 10px 15px 5px 15px;
+}
+
+.main-menu .flex-item .menu-item {
+  margin-right: 5px;
+}
+
+.main-menu .flex-item .menu-item:last-child {
+  margin-right: 0;
+}
+
+.main-menu .flex-item .menu-item:hover .menu,
+.main-menu .flex-item .menu-item .active {
+  border-bottom: 5px solid rgba(255, 255, 255, 0.8);
+}
+
+.header-right .icon {
+  padding: 10px 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.header-right .profile {
+  width: 40px;
+  cursor: pointer;
+  position: relative;
+}
+
+.sub-menu-wrap {
+  position: absolute;
+  top: 8%;
+  right: 7%;
+  width: 320px;
+  margin: 10px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu {
+  max-height: 400px;
+}
+
+.user-info {
+  background-color: #08182f;
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.user-info .profile {
+  width: 70px;
+  margin-right: 10px;
+}
+
+.user-details .user-name,
+.user-details.user-position {
+  display: block;
+}
+
+.user-options {
+  background-color: white;
+  padding: 30px 15px;
+  align-items: center;
+}
+
+.user-options .option {
+  font-size: 17px;
+  font-weight: 400;
+  display: block;
+  color: #333;
+  padding: 15px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.user-options .option:last-child {
+  margin-bottom: 0;
+}
+
+.user-options .option:hover {
+  color: white;
+  background-color: #08182f;
+  font-weight: 500;
+}
